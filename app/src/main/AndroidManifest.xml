@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zj.dailydemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DailyDemo">
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DailyDemo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".demos.ClipToPaddingActivity" />
+        <activity android:name=".demos.ClipChildrenActivity" />
+        <activity android:name=".demos.ClickEffectActivity" />
+        <activity android:name=".demos.TestTransitionActivity" />
+        <activity android:name=".demos.transictions.MakeCustomerAnimationActivity" />
+        <activity android:name=".demos.transictions.MakeScaleUpAnimationActivity" />
+        <activity android:name=".demos.transictions.MakeSceneTransitionActivity" />
+        <activity android:name=".demos.transictions.MakeThumbnailScaleUpAnimationActivity" />
+        <activity android:name=".demos.transictions.ActivityTransitionMainActivity" />
+        <activity android:name=".demos.transictions.SceneDelayedActivity" />
+        <activity android:name=".demos.transictions.shareelementtransition.browse.ActivityBrowse" />
+        <activity android:name=".demos.transictions.managergo.SceneManagerGoActivity" />
+        <activity android:name=".demos.transictions.managergo.slide.SceneSlideActivity" />
+        <activity android:name=".demos.transictions.managergo.fade.SceneFadeActivity" />
+        <activity android:name=".demos.transictions.managergo.explode.SceneExplodeActivity" />
+        <activity android:name=".demos.transictions.managergo.autotransition.SceneAutoTransitionActivity" />
+        <activity android:name=".demos.transictions.managergo.changebounds.SceneChangeBoundsActivity" />
+        <activity android:name=".demos.transictions.managergo.changeclipbounds.SceneChangeClipBoundsActivity" />
+        <activity android:name=".demos.transictions.managergo.changeimagetransform.SceneChangeImageTransformBoundsActivity" />
+        <activity android:name=".demos.transictions.managergo.changetransform.SceneChangeTransformActivity" />
+        <activity android:name=".demos.transictions.managergo.combination.SceneCombinationActivity" />
+        <activity android:name=".demos.transictions.shareelementtransition.browse.BrowseShareElementTransitionActivity" />
+        <activity android:name=".demos.transictions.shareelementtransition.sample.NextShareElementTransitionActivity" />
+        <activity android:name=".demos.transictions.shareelementtransition.sample.SampleShareElementTransitionActivity" />
+        <activity android:name=".demos.transictions.shareelementtransition.ShareElementTransitionMainActivity" />
+        <activity android:name=".demos.transictions.SceneTransitionMainActivity" />
+        <activity android:name=".demos.SpeechRecognizerActivity" />
+        <activity android:name=".demos.AnimationUtilsActivity" />
+        <activity android:name=".demos.material.ShapeAbleImageActivity" />
+    </application>
+
+</manifest>

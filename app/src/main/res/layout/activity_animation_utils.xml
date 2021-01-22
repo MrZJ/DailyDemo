@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="end"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="B"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="180dp"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="D"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="180dp"
+        android:background="@color/light_blue_A400"
+        android:gravity="center"
+        android:text="C"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="隐藏" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/endTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:text="显示" />
+</FrameLayout>

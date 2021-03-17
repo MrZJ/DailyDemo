@@ -14,6 +14,7 @@ import com.zj.dailydemo.demos.material.ShapeAbleImageActivity
 import com.zj.dailydemo.demos.transictions.ActivityTransitionMainActivity
 import com.zj.dailydemo.demos.transictions.SceneTransitionMainActivity
 import com.zj.dailydemo.demos.transictions.shareelementtransition.ShareElementTransitionMainActivity
+import com.zj.dailydemo.demos.window.MessageDialog
 
 class ScrollingActivity : AppCompatActivity(), View.OnClickListener {
     private val mBinding by lazy {
@@ -35,6 +36,7 @@ class ScrollingActivity : AppCompatActivity(), View.OnClickListener {
 //        mBinding.testRecognizer.setOnClickListener(this)
         mBinding.testAnimationUtils.setOnClickListener(this)
         mBinding.testShapeAbleImage.setOnClickListener(this)
+        mBinding.testWindow.setOnClickListener(this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -60,6 +62,7 @@ class ScrollingActivity : AppCompatActivity(), View.OnClickListener {
                 ClipToPaddingActivity.start(this)
             }
             R.id.fab -> {
+                CustomViewDisplayActivity.start(this)
                 Snackbar.make(mBinding.fab, "snack bar is clicked", LENGTH_SHORT).show()
             }
             R.id.clipChildren -> {
@@ -97,6 +100,15 @@ class ScrollingActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.testShapeAbleImage -> {
                 ShapeAbleImageActivity.start(this)
+            }
+            R.id.testWindow -> {
+                startActivity(Intent(this, ShareElementTransitionMainActivity::class.java))
+                mBinding.root.postDelayed({
+                    Application.ACLifeCycleManager.getCurrentActivity()?.let {
+                        MessageDialog.getInstance(it)
+                            .showMsg("", "", "")
+                    }
+                }, 3000)
             }
         }
     }

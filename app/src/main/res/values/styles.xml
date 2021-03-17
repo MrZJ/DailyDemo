@@ -5,4 +5,14 @@
         <item name="cornerSizeTopLeft">50dp</item>
         <item name="cornerFamilyTopLeft">rounded</item>
     </style>
+
+    <style name="Widget.Theme.DailyDemo.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
+    </style>
+
+    <style name="pop_translation_anim_style" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/msg_pop_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/msg_pop_out_anim</item>
+    </style>
 </resources>

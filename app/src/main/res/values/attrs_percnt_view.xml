@@ -1,0 +1,17 @@
+<resources>
+    <declare-styleable name="PercentView">
+        <attr name="moneyColor" format="color" />
+        <attr name="moneyPrefix" format="string" />
+        <attr name="moneyTextSize" format="dimension" />
+        <attr name="moneyPrefixTextSize" format="dimension" />
+        <attr name="tipsColor" format="color" />
+        <attr name="tipsTextSize" format="dimension" />
+        <attr name="titleString" format="string" />
+        <attr name="outCircleWidth" format="dimension" />
+        <attr name="outCircleColor" format="color" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="innerShadeColor" format="color" />
+        <attr name="innerShadeWidth" format="dimension" />
+        <attr name="innerMarginOuter" format="dimension" />
+    </declare-styleable>
+</resources>
